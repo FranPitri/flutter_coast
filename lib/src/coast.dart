@@ -68,6 +68,10 @@ class CoastController {
     _pageController.dispose();
   }
 
+  void addListener(VoidCallback listener) {
+    _pageController.addListener(listener);
+  }
+
   Future<void> animateTo({
     required int beach,
     Duration duration = const Duration(milliseconds: 200),
